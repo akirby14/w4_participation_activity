@@ -102,25 +102,28 @@ class Pythoners:
                 "favorite_planet": "Neptune",
                 "fun_fact": "I have 2 cats, Angus and Junebug :)",
             },
-        ],
-        "new_users" = [
-        "Amelia",
-        "Adhanet",
-        "Claude",
-        "Istar",
-        "Kieran",
-        "Kennedy",
-      ]
-    
+        ]
+
+        self.new_users = [
+            "Amelia",
+            "Adhanet",
+            "Claude",
+            "Istar",
+            "Kieran",
+            "Kennedy",
+        ]
+
 # Explain your function concept
 # Write a function that does something interesting with the above dictionary `pythoners`
 # ONLY SUBMIT WHAT IS BELOW THIS LINE
+
+pythoners = Pythoners()
 
 def alphabetical_funfacts():
     """Sorts the people alphabetically by name and prints their fun facts."""
     fun_facts = []
 
-    for person in pythoners["responses"]:
+    for person in pythoners.responses:
         if "fun_fact" in person:
             fun_facts.append((person["name"], person["fun_fact"]))
 
